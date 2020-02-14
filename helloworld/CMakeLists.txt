@@ -1,3 +1,5 @@
 cmake_minimum_required(VERSION 3.16.4)
 project(helloworld)
 add_executable(hello helloworld.cpp)
+set(CMake_C_COMPILER /usr/bin/clang)
+set(CMAKE_CXX_COMPILER /usr/bin/clang++)
