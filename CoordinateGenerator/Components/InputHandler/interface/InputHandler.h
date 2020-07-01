@@ -1,18 +1,15 @@
 #pragma once
 
-
-#include <opencv2/opencv.hpp> //Include file for every supported OpenCV function
+#include <opencv2/opencv.hpp> 
 
 namespace TomTom {
-namespace cd {
+namespace cd{
 
-	class InputHandler
-	{
+	class CInputHandler{
 
-	public:
-		cv::Mat readImage( const std::string& filename)const; // a read_only function
-		
+		public:
+		    static cv::Mat readImage(const std::string& aFilename); 
 	};
 
-} // namespace cd	
-} // namespace TomTom
+}//namespace cd	
+}//namespace TomTom

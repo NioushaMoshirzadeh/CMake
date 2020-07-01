@@ -1,22 +1,17 @@
 #include "InputHandler.h"
 
+namespace{ 
+    constexpr int KLoadColorImage {1};
+
+}//namespace
+
 namespace TomTom{
-namespace cd {
+namespace cd{
 
-    cv::Mat InputHandler::readImage(const std::string& filename) const
-    {
+    cv::Mat CInputHandler::readImage(const std::string& aFilename){
         
-        if(filename == "")
-        {
-            std::cout <<"your filename is empty!" <<std::endl;
-        }
-
-        (void)filename;
-        
-   
-
-    return  cv::imread(filename,1);
+    return  cv::imread(aFilename, KLoadColorImage);
     }
 
-} // namespace cd  
-} // namespace TomTom
+}//namespace cd  
+}//namespace TomTom
